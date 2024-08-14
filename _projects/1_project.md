@@ -1,76 +1,81 @@
 ---
 layout: page
-title: Railway Track Modeling
-description: Analytical model for ballasted railway track system
-img: assets/img/P1.jpg
-importance: 1
+title: project 2
+description: a project with a background image and giscus comments
+img: assets/img/3.jpg
+importance: 2
 category: work
-related_publications: true
+giscus_comments: true
 ---
 
-Ballasted railway track systems are the most widely used railroad structures due to their low construction and maintenance costs. However, with the increasing speeds and loads of modern rail systems, assessing their performance under dynamic loads is crucial. Traditional track design methods often rely on static stress analysis, which falls short in accurately predicting the dynamic response of rail tracks, especially under the influence of moving trains.
+Every project has a beautiful feature showcase page.
+It's easy to include images in a flexible 3-column grid format.
+Make your photos 1/3, 2/3, or full width.
 
-This project focuses on developing an innovative frequency-dependent analytical model that accounts for the flexibility of the sleeper beam and the shear effects of ballast and subballast layers. The proposed model is designed to offer a more precise representation of the rail track's dynamic behavior while maintaining computational efficiency, making it highly applicable for practical engineering use. A few key aspects of the study are listed below. 
-<ul>
-    <li>The ballasted railway track structure is typically divided into two subsystems: (a) track superstructure and (b) track substructure. The superstructure includes components such as rail beams, rail pads, sleepers, and fastening systems, while the substructure consists of ballast, sub-ballast, and subgrade, as illustrated in Figure 1.
+To give your project a background in the portfolio page, just add the img tag to the front matter like so:
 
-    <div class="row d-flex align-items-end">
-        <div class="col-sm mt-3 mt-md-0">
-            {% include figure.liquid loading="eager" path="assets/img/P1track2.png" title="Longitudinal-section of railway track" class="img-fluid" %}
-        </div>
-        <div class="col-sm mt-3 mt-md-0">
-            {% include figure.liquid loading="eager" path="assets/img/P1track1.png" title="Cross-section of railway track" class="img-fluid" %}
-        </div>
-    </div>
-    <div class="caption">
-        Figure 1. Longitudinal-section (left) and cross-section (right) of the ballasted railway track system. The superstructure and substructure, along with various rail components, are highlighted [source: {% cite sayeed2016design %}].
-    </div>
-    </li>
+    ---
+    layout: page
+    title: project
+    description: a project with a background image
+    img: /assets/img/12.jpg
+    ---
 
-
-    <li>The model integrates the effects of all critical substructural components through a frequency-dependent substructural stiffness approach. A simplified representation of the model is depicted in Figure 2.
-
-    <div class="row d-flex align-items-end">
-        <div class="col-sm mt-3 mt-md-0">
-            {% include figure.liquid loading="eager" path="assets/img/P1model2.png" title="Track component idealization" class="img-fluid" %}
-        </div>
-        <div class="col-sm mt-3 mt-md-0">
-            {% include figure.liquid loading="eager" path="assets/img/P1model1.png" title="Equivalent stiffness" class="img-fluid" %}
-        </div>
-    </div>
-    <div class="caption">
-        Figure 2. A schematic showing the idealization of the cross-section (left) and longitudinal-section (right) of the railway track.
-    </div>
-    </li>
-
-
-    <li>To validate the model, time-domain track deflections are evaluated for various train velocities using track and ground parameters specific to high-speed railway lines on both stiff and soft soil sites. An example of this validation is shown in Figure 3, using data from an experimental study on rail deflection monitoring conducted in Portugal {% cite dos2016experimental %}.
-
-    <div class="row d-flex align-items-end">
+<div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/P1vald2.png" title="Axle loads and train geometry" class="img-fluid" %}
+        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/P1vald1.png" title="Validation with experimental data" class="img-fluid" %}
+        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="caption">
-    Figure 3. Axle loads and train geometry (left), and comparison of the track deflection profiles from the proposed model with the experimental data {% cite dos2016experimental %}.
+</div>
+<div class="caption">
+    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+</div>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
-    </li>
+</div>
+<div class="caption">
+    This image can also have a caption. It's like magic.
+</div>
 
-    <li>Spectral analysis of rail beam deflections indicates that the dominant frequency content of deflection amplitudes is strongly influenced by wheel-load velocity. Time-domain analysis further reveals a critical velocity at which rail beam vibration amplitudes become significantly large. At this velocity, the rail track system vibrates at the isolation frequency associated with the sleeper-substructure system. The results of the spectral analysis are presented in Figure 4.
+You can also put regular text between your rows of images.
+Say you wanted to write a little bit about your project before you posted the rest of the images.
+You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
 
-    <div class="row">
-        <div class="col-sm mt-3 mt-md-0 text-center">
-            {% include figure.liquid loading="eager" path="assets/img/P1isof.png" title="Spectral analysis of deflection results" class="img-fluid" width="50%" %}
-        </div>
+<div class="row justify-content-sm-center">
+    <div class="col-sm-8 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="caption text-center">
-        Figure 4. Spectral analysis highlighting the critical velocity and isolation frequency.
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
-    </li>
-</ul>
+</div>
+<div class="caption">
+    You can also have artistically styled 2/3 + 1/3 images, like these.
+</div>
 
-For more detailed information and additional results on rail deflection across various soil conditions, please refer to the studies by Kumawat et al. (2019) {% cite kumawat2019frequency %} and {% cite kumawat2021thesis %}. All codes associated with this study are available in the GitHub repository <a href="https://github.com/Aditi-Kumawat/FreqTrack" target="_blank">FreqTrack</a>.
+The code is simple.
+Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
+To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
+Here's the code for the last row of images above:
 
+{% raw %}
+
+```html
+<div class="row justify-content-sm-center">
+  <div class="col-sm-8 mt-3 mt-md-0">
+    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+  </div>
+  <div class="col-sm-4 mt-3 mt-md-0">
+    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+```
+
+{% endraw %}
