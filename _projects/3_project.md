@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Green's Function for Continuous Structrue
+title: Green Function for Continuous Structrue
 description: Wavenumber based approach for Fourier analysis
 img: assets/img/P3.jpg
 importance: 1
