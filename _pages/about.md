@@ -7,7 +7,7 @@ subtitle: <a href='#'>Research Scientist</a>.
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: true # crops the image to make it circular
+  image_circular: false # crops the image to make it circular
   more_info: >
     <p>N1150,</p>
     <p>Arcisstrasse, 21</p>
