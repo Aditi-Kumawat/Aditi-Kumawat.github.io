@@ -23,7 +23,7 @@ This project focuses on developing an innovative frequency-dependent analytical 
         </div>
     </div>
     <div class="caption">
-        Figure 1. Longitudinal-section (left) and cross-section (right) of the ballasted railway track system. The superstructure and substructure, along with various rail components, are highlighted [source: {% cite sayeed2016design %}].
+        Figure 1. Longitudinal-section (left) and cross-section (right) of the ballasted railway track system. The superstructure and substructure, along with various rail components, are highlighted [source: <a href="https://core.ac.uk/reader/195631460" target="_blank">link</a>].
     </div>
     </li>
 
@@ -44,7 +44,8 @@ This project focuses on developing an innovative frequency-dependent analytical 
     </li>
 
 
-    <li>To validate the model, time-domain track deflections are evaluated for various train velocities using track and ground parameters specific to high-speed railway lines on both stiff and soft soil sites. An example of this validation is shown in Figure 3, using data from an experimental study on rail deflection monitoring conducted in Portugal {% cite dos2016experimental %}.
+    <li>To validate the model, time-domain track deflections are evaluated for various train velocities using track and ground parameters specific to high-speed railway lines on both stiff and soft soil sites. An example of this validation is shown in Figure 3, using data from an experimental study on rail deflection monitoring conducted in <a href="https://www.sciencedirect.com/science/article/abs/pii/S0267726116302251" target="_blank">Portugal</a> .
+    
 
     <div class="row d-flex align-items-end">
     <div class="col-sm mt-3 mt-md-0">
@@ -55,7 +56,7 @@ This project focuses on developing an innovative frequency-dependent analytical 
     </div>
     </div>
     <div class="caption">
-    Figure 3. Axle loads and train geometry (left), and comparison of the track deflection profiles from the proposed model with the experimental data {% cite dos2016experimental %}.
+    Figure 3. Axle loads and train geometry (left), and comparison of the track deflection profiles from the proposed model with the experimental data.
     </div>
     </li>
 
@@ -72,5 +73,5 @@ This project focuses on developing an innovative frequency-dependent analytical 
     </li>
 </ul>
 
-For more detailed information and additional results on rail deflection across various soil conditions, please refer to the studies by Kumawat et al. (2019) {% cite kumawat2019frequency %} and {% cite kumawat2021thesis %}. All codes associated with this study are available in the GitHub repository <a href="https://github.com/Aditi-Kumawat/FreqTrack" target="_blank">FreqTrack</a>.
+For more detailed information and additional results on rail deflection across various soil conditions, please refer to the studies {% cite kumawat2019frequency %} and {% cite kumawat2021thesis %}. All codes associated with this study are available in the GitHub repository <a href="https://github.com/Aditi-Kumawat/FreqTrack" target="_blank">FreqTrack</a>.
 

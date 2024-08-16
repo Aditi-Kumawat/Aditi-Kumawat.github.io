@@ -1,81 +1,123 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+title: Track-Defect Analysis
+description: impact of rail/track irregularities on rail system safety
+img: assets/img/P2rsqtthumb.jpg
 importance: 2
 category: work
-giscus_comments: true
+related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+<p>
+    This project is centered around the development of an innovative iterative technique designed to evaluate time-dependent loads on track structures, specifically addressing the challenges posed by various track defects. The interaction between a moving train and rail defects, such as mud spots or rail-head corrugation, can lead to unstable vibrations and rapid track degradation (see examples in <strong>Figure 1</strong> and <strong>Figure 2</strong>). These defects cause sudden variations in track stiffness and geometry, resulting in additional dynamic stresses that can compromise the structural health of the track.
+</p>
+<p>
+    While existing methods can address some aspects of vehicle-track interaction, they often fall short in fully capturing the complex, coupled dynamics involved when multiple track defects are present. This project aims to bridge that gap by developing a more comprehensive and general technique to assess the potential damage to track structures, in order to ensure a more reliable rail transport.
+</p>
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+<div class="row justify-content-center align-items-center">
+    <div class="col-sm-4 d-flex justify-content-center">
+        {% include figure.liquid loading="eager" path="assets/img/P2.jpg" title="rail head corrugation" class="img-fluid" style="max-width: 80%;" %}
+    </div>
+    <div class="col-sm-4">
+        <div class="d-flex justify-content-center">
+            {% include figure.liquid loading="eager" path="assets/img/P2rsqt.jpg" title="rail squat" class="img-fluid mb-3" %}
+        </div>
+        <div class="d-flex justify-content-center">
+            {% include figure.liquid loading="eager" path="assets/img/P2wflt.jpg" title="wheel flat" class="img-fluid" %}
+        </div>
+    </div>
+</div>
+<div class="caption text-center mt-3">
+    Figure 1. The rail and wheel head defects such as rail head <a href="https://www.jstage.jst.go.jp/article/jmtl/3/1/3_1_154/_article" target="_blank">corrugation</a> (left), <a href="https://mp.nl/en/solution/sound-measurements-board-train-detecting-rail-defects" target="_blank">rail squat</a> (top-right), and the wheel flat <a href="https://en.wikipedia.org/wiki/Flat_spot" target="_blank">wheel flat</a> (bottom-right) may cause unwanted stress on the track under dynamic loading and may also result in wheel-rail contact loss.
+</div>
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+<p>
+    A new iterative approach is developed to analyze the coupled equation of motion of the vehicle-track system. This approach takes into account:
+</p>
+
+<ul>
+    <li>The possibility of contact loss between the wheel and rail.</li>
+    <li>Variation in track stiffness.</li>
+    <li>The effect of track defects, such as rail-head corrugation, on track deflection.</li>
+</ul>
+
+<p>
+    An example track model and vehicle idealization is shown in <strong>Figure 3</strong>. The track model used for the analysis can account for variations in track stiffness and geometry {% cite kumawat2022influence %}, while the vehicle model can account for loss of contact {% cite kumawat2022iterative %}.
+</p>
+
+<div class="row d-flex align-items-end">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/P2trckmod.png" title="track model" class="img-fluid" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/P2veh.png" title="vehicle idealization" class="img-fluid" %}
+    </div>
+</div>
+<div class="caption">
+    Figure 3. Basic idealization of track model (left) and vehicle (right).
+</div>
+
+<p>
+    <strong>Figure 4</strong> illustrates the steps of the proposed iterative scheme via a flowchart. The proposed iterative scheme is applied along with the <a href="https://aditi-kumawat.github.io/projects/3_project/" target="_blank">track's Green's function</a> to obtain the time-domain response of a rail beam. Observations include:
+</p>
+
+<ul>
+    <li>Loss of contact occurs when the wheel encounters rail-head corrugation.</li>
+    <li>This contact loss results in high impact loads on the rail beam, leading to a significant increase in rail beam deflections (by up to 85% for undamped cases and 57% for damped cases).</li>
+    <li>The method is described in full detail in the {% cite kumawat2022iterative %}.</li>
+</ul>
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm mt-3 mt-md-0 text-center">
+        {% include figure.liquid loading="eager" path="assets/img/P2flow.png" title="Iterative approach" class="img-fluid" width="80%" %}
     </div>
 </div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+<div class="caption text-center">
+    Figure 4. Flow chart showing the steps of the iterative approach used for analyzing the track model traversed by a multi-degree-of-freedom system.
 </div>
+
+<p>
+    An important next step in this research involves validating the models using experimental data on rail deflections. During my academic stay at the University of Stuttgart, my team initiated an experimental study aimed at:
+</p>
+
+<ul>
+    <li>Collecting acceleration data from rail beams along an 8-kilometer section (see <strong>Figure 5</strong>)of railway track near Stuttgart, Germany.</li>
+    <li>Analyzing the data to identify rail defects and compare the observed rail beam deflections with those predicted by the model under identical track conditions.</li>
+</ul>
+
+<p>
+    Unfortunately, the data collection process was interrupted due to the COVID-19 lockdown in 2020.
+</p>
+
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm mt-3 mt-md-0 text-center">
+        {% include figure.liquid loading="eager" path="assets/img/P2expmap.png" title="Map Neuffen" class="img-fluid" width="90%" %}
     </div>
 </div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
+<div class="caption text-center">
+    Figure 5. Track Length: 8 km (Neuffen, Baden Württemberg, Germany).
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+<div class="row justify-content-center align-items-center">
+    <div class="col-sm-4 d-flex justify-content-center">
+        {% include figure.liquid loading="eager" path="assets/img/P2exp3.jpg" title="data collection station" class="img-fluid" style="max-width: 90%;" %}
     </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm-4">
+        <div class="d-flex justify-content-center">
+            {% include figure.liquid loading="eager" path="assets/img/P2exp1.jpg" title="wagon used for testing" class="img-fluid mb-3" %}
+        </div>
+        <div class="d-flex justify-content-center">
+            {% include figure.liquid loading="eager" path="assets/img/P2exp2.jpg" title="sensor installed on axle box" class="img-fluid" %}
+        </div>
     </div>
 </div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+<div class="caption text-center mt-3">
+    Figure 6. (left) Measurement facility inside the wagon, (top-right) Train wagon used for the experimental study, (bottom-right) accelerometer installed on axle box.
 </div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+<p>
+    For more detailed information and additional results on rail deflection across various track defects and wheel-rail contact conditions, please refer to the studies: {% cite kumawat2022iterative %}, {% cite kumawat2022influence %}, and {% cite kumawat2021thesis %}.
+</p>
+ 
 
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}

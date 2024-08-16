@@ -1,80 +1,84 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
-importance: 3
-category: fun
+title: Wave-propagation Analysis
+description: synthetic ground motion generation for induced events
+img: assets/img/P4.jpg
+importance: 1
+category: work
+related_publications: true
 ---
+<div class="project-introduction">
+    <p>
+        As part of a broader initiative to harness the potential of geothermal energy, this project focuses on addressing the challenges associated with its safe extraction. Geothermal energy is increasingly recognized as a sustainable and renewable resource. However, its extraction has been linked to minor earthquakes, raising concerns within both scientific circles and local communities about infrastructure safety.
+    </p>
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+    <p> 
+        Although these seismic events are typically few in number and relatively minor, they still pose potential risks to buildings and other structures. Research into the effects of these geothermally induced earthquakes is hampered by the limited availability of ground motion data. This scarcity makes it difficult to fully understand the impact of such events on the built environment.
+    </p>
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+    <p>
+        While there are advanced tools available for simulating seismic wave propagation in complex 3D soil environments, these methods often require significant computational resources, making them less accessible and efficient for widespread use. Given the challenges posed by limited data and the computational demands of existing techniques, there is a clear need for a more simplified and rapid approach to generating synthetic ground motion data.
+    </p>
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+    <p>
+        This project aims to fill that gap by developing a streamlined method for creating synthetic ground motions using a semi-analytical approach. Building on previous research, our methodology (illustrated in <strong>Figure 1</strong>) focuses on analyzing layered soil profiles to simulate the effects of seismic events associated with geothermal power plants. 
+    </p>
+
+</div>
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        <div class="col-sm mt-3 mt-md-0 text-center">
+            {% include figure.liquid loading="eager" path="assets/img/P4flow.png" title="Evaluation Approach" class="img-fluid" width="1000%" %}
+        </div>
     </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
+<div class="caption text-center">
+    Figure 1. Flow chart showing the steps of the evaluation of the groud motion using the proposed approach. 
+ </div>
+
+<p>
+    This project examines a case study of a geothermal facility located near Munich, Germany. Notably, in 2016, this site witnessed two seismic occurrences, each with a local magnitude of approximately 𝑀𝐿≈2.0. <strong>Figure 2</strong> offers a map pinpointing the site of the associated geothermal power plant. Additionally, the figure shows the three distinct recording stations: POI01, POI02, and POI03. These stations were situated at distances of 1.55 km, 5.6 km, and 3.3 km from the seismic events' epicenter, respectively.
+</p>
+
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm mt-3 mt-md-0 text-center">
+        {% include figure.liquid loading="eager" path="assets/img/P4map.png" title="Poing geothermal power-plant" class="img-fluid" width="40%" %}
     </div>
 </div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
+<div class="caption text-center">
+    Figure 2. Map showing the geothermal power plant and the seismic data recording stations POI01, POI02, and POI03 located at distances of 1.55 km, 5.6 km, and 3.3 km from the epicenter.
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+<p>
+    <strong>Figure 3</strong> presents the free-field velocities for the East-West (E-W), North-South (N-S), and vertical directions. Each figure displays the velocities evaluated at seven distinct locations, ranging from 𝑟=0.5 km to 𝑟=10 km from the epicenter. Each of the waveforms shown in Figures <strong>Figure 3</strong> is simulated for a frequency range of 0 – 10 Hz, chosen due to its significance for induced events. 
+</p>
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+<p>
+    Key observations include:
+</p>
+<ul>
+    <li>A marked decrease in velocity values in each direction as the distance from the epicenter increases, primarily due to radiation damping.</li>
+    <li>All simulated free-field vibrations remained below the 5 mm/s threshold, a benchmark set by DIN4150-3 for evaluating structural damages.</li>
+    <li>From a computational standpoint:
+        <ul>
+            <li>Simulating frequency domain Green’s functions within the 0 to 10 Hz range took approximately 8 minutes.</li>
+            <li>Evaluating time-domain waveform outcomes for a designated 𝑟 value took roughly 60 seconds.</li>
+        </ul>
+    </li>
+    <li>These computations were executed on a 2x Intel-Xeon-Gold 6136 3GHz/12C computer with dual 12 processors.</li>
+    <li>The relatively fast runtime of the presented methodology underscores its applicability in engineering contexts.</li>
+</ul>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0 text-center">
+        {% include figure.liquid loading="eager" path="assets/img/P4gm.png" title="generated ground motions" class="img-fluid" width="100%" %}
     </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
 </div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+<div class="caption text-center">
+    Figure 3. Simulated ground motions in the horizontal east-west (left), north-south (center), and vertical (right) sensor directions at various distances from the epicenter.
 </div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+<p>
+    By simplifying the process of generating ground motion data, this project contributes to safer geothermal energy extraction and better preparedness for any seismic risks. For more detailed information and additional results, please refer to the studies: {% cite Kumawat2024 %}. All codes associated with this study are available in the GitHub repository <a href="https://github.com/Aditi-Kumawat/Source_Wavefield_Simulation" target="_blank">Source_Wavefield_Simulation</a>.  
+</p>
 
-{% raw %}
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}

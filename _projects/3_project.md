@@ -1,81 +1,68 @@
 ---
 layout: page
-title: project 3 with very long name
-description: a project that redirects to another website
-img: assets/img/7.jpg
-redirect: https://unsplash.com
-importance: 3
+title: Green's Function for Continuous Structrue
+description: Wavenumber based approach for Fourier analysis
+img: assets/img/P3.jpg
+importance: 1
 category: work
+related_publications: true
 ---
-
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+<div class="project-introduction">
+    <p>
+        Understanding the impact of time-dependent loads caused by track defects is crucial for railway track analysis. Typically, this analysis involves using various numerical and analytical models, many of which rely on Green's function (or the time-domain impulse response function of the rail beam) to determine the dynamic response of the railway track under such loads. Green's function is usually derived from the rail beam's frequency-domain response, known as track receptance, through an inverse Fourier transform. However, this method has some significant drawbacks:
+    </p>
+    <ul>
+        <li>The need to evaluate the frequency-domain solution over a vast range of frequencies, which increases computational costs.</li>
+        <li>The difficulty in accurately inverting the frequency-domain solution, often requiring complex numerical techniques.</li>
+    </ul>
+    <p>
+        To address these challenges, we propose a novel and straightforward approach to evaluate Green's function for a conventional continuous, linear track model. This model consists of an infinite Euler-Bernoulli beam supported by a Pasternak-type viscoelastic foundation, offering computational efficiency that can be particularly useful for practicing engineers.
+    </p>
+    <p>
+        Our approach involves first computing the rail beam's response in the time-wavenumber domain using the classical Duhamel integral technique. The Green's function is then obtained by converting this solution into the time-space domain. The process is outlined in the flowchart provided below (<strong>Figure 1</strong>).
+    </p>
+</div>
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        <div class="col-sm mt-3 mt-md-0 text-center">
+            {% include figure.liquid loading="eager" path="assets/img/P3flow.png" title="Evaluation Approach" class="img-fluid" width="60%" %}
+        </div>
     </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
+<div class="caption text-center">
+    Figure 1. Flow chart showing the steps of the evaluation of the Green's Function using the wavenumber approach. 
+ </div>
+
+<p>
+    <strong>Figure 2</strong> shows the normalized time-domain Green's function for the viscoelastic track model as a function of time and distance (with the impulse applied at <em>x=0</em> and <em>t=0</em>). The displacements are normalized against the maximum displacement of the rail beam observed within the considered range of time and distance. As distance increases, the time lag before a non-zero displacement is observed also increases, while the displacement magnitude decreases. This time delay is due to the finite phase velocity of flexural waves in the rail beam. Additionally, the deflection curve stretches out as the distance increases, a result of the dispersive nature of flexural wave velocity, where high-frequency waves travel faster than low-frequency waves.
+</p>
+
 <div class="row">
+    <div class="col-sm mt-3 mt-md-0 text-center">
+        {% include figure.liquid loading="eager" path="assets/img/P3gf.png" title="Green's function space-time domain" class="img-fluid" width="60%" %}
+    </div>
+</div>
+<div class="caption text-center">
+    Figure 2. Green's function for viscoelastic model at locations, <em>x</em>=(0, 40m).
+</div>
+
+<p>
+    Unlike conventional methods, this Fourier inversion approach is both numerically stable and computationally efficient. <strong>Figure 3</strong> presents contour plots of the normalized Green's function of the viscoelastic track model. These are shown as a function of wavenumber-time (proposed approach) and frequency-distance (conventional approach), respectively. The yellow portions of the plots in <strong>Figure 3</strong> indicate the dominant wavenumbers and frequencies. In the proposed approach (Figure 3, left), the dominant wavenumber range is small across all considered time instances, and the Green's function decays rapidly with wavenumber, simplifying the transformation to the space-time domain.
+</p>
+
+<div class="row d-flex align-items-end">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/P3kvary.png" title="Green's function wavenumber-domain" class="img-fluid" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/P3omgvary.png" title="Green's function frequency-domain" class="img-fluid" %}
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    Figure 3. Contour plots showing the variation of normalized Green's function of the viscoelastic track model with (left) wavenumber-time and (right) frequency-distance.
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+<p>
+    For more detailed information and additional results on the use of Green's function, please refer to the studies: {% cite kumawat2019wave %} and {% cite kumawat2021thesis %}.
+</p>
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
