@@ -3,7 +3,7 @@ layout: page
 title: Green Function for Continuous Structrue
 description: Wavenumber based approach for Fourier analysis
 img: assets/img/P3.jpg
-importance: 1
+importance: 5
 category: work
 related_publications: true
 ---

@@ -3,13 +3,13 @@ layout: page
 title: Wave-propagation Analysis
 description: synthetic ground motion generation for induced events
 img: assets/img/P4.jpg
-importance: 1
+importance: 4
 category: work
 related_publications: true
 ---
 <div class="project-introduction">
     <p>
-        As part of a broader initiative to harness the potential of geothermal energy, this project focuses on addressing the challenges associated with its safe extraction. Geothermal energy is increasingly recognized as a sustainable and renewable resource. However, its extraction has been linked to minor earthquakes, raising concerns within both scientific circles and local communities about infrastructure safety.
+        As part of a broader initiative to harness the potential of <a href="https://geothermie-allianz.de/en/home/" target="_blank">geothermal energy in Bavaria</a>, this project focuses on addressing the challenges associated with its safe extraction. Geothermal energy is increasingly recognized as a sustainable and renewable resource. However, its extraction has been linked to minor earthquakes, raising concerns within both scientific circles and local communities about infrastructure safety.
     </p>
 
     <p> 

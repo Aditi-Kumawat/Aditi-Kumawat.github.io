@@ -2,9 +2,9 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: A curated selection of innovative projects I've contributed to over the years
+description: A curated selection of innovative projects worked on or contributed to over the years
 nav: true
-nav_order: 3
+nav_order: 2
 horizontal: false
 ---
 

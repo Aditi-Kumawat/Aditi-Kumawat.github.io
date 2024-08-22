@@ -1,7 +1,6 @@
-I am a postdoctoral researcher working at the Chair of Structural Mecahnics, Technical University of Munich. 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a postdoctoral researcher at the Chair of Structural Mechanics, Technical University of Munich, where I have been working since 2021. I completed my PhD at the Indian Institute of Technology Kanpur, focusing on “Ballasted Railway Track Systems: A New Analytical Framework for Modeling and Simulation.”
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Before joining the Technical University of Munich, I worked as a guest scientist at the Institute of Railways and Transportation at the University of Stuttgart from June to December 2019. I also served as a visiting researcher at the Chair of Structural Mechanics at the Technical University of Munich from February 2020 to August 2021.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+My research areas include the analytical and numerical modeling of railway track systems, wave propagation in elastic media, soil-structure interactions, and structural vibrations in residential buildings. My background in research and teaching has provided me with a solid understanding of mechanics, signal processing, structural dynamics, and wave propagation.
 

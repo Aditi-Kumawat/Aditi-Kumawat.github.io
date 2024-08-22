@@ -1,14 +1,11 @@
-github_users:
-  - torvalds
-  - alshedivat
+#github_users:
+#  - Aditi-Kumawat
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - Aditi-Kumawat/Ansys_Taxonomy_Files
+  - Aditi-Kumawat/Source_Wavefield_Simulation
+  - Aditi-Kumawat/FreqTrack
+  - Aditi-Kumawat/Masterarbeit_WTK
+  - Aditi-Kumawat/Mechanics_Apps
