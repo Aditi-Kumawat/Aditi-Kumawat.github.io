@@ -11,12 +11,8 @@ related_publications: true
     <p>
         This research is a key component of the collaborative <a href="https://geothermie-allianz.de/en/home/" target="_blank">Geothermie-Allianz Bayern</a> initiative, aimed at harnessing deep geothermal energy in Bavaria, Germany.
     <p>
-        The Bavarian Molasse Basin offers ideal conditions for geothermal energy, but the process can induce micro-seismic events, affecting local structures. This project aims to deepen our understanding of these impacts, helping to enhance public support and mitigate risks.
+        The Bavarian Molasse Basin provides ideal conditions for geothermal energy, but geothermal operations as shown in Figure 1, particularly during subsurface water injection, can induce micro-seismic events that cause building vibrations. Although these vibrations are usually harmless, they have led to public concern due to their annoyance and, in rare cases, panic from stronger events. This project seeks to better understand these impacts to enhance public support and mitigate risks.
     </p>
-
-<p>
-    Geothermal power plant (GPP) operations may cause micro-seismic events during the water injection phase, leading to noticeable building vibrations. While these vibrations are typically harmless, they have occasionally led to public concern due to their annoyance factor and rare instances of panic from stronger events.
-</p>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0 text-center">
@@ -37,7 +33,7 @@ related_publications: true
 </div>
 
     <p> 
-        The project deals with the analysis of groud motion data as well as the vibrational analysis of the urban structures. A recent study {% cite taddei2024development %} in this direction examines small earthquakes caused by geothermal power plants in Southern Germany and develops new equations to predict ground movements during these events. The research uses data from a power plant in Insheim, Germany and combines it with simulated data for the Munich area. The findings highlight the need for region-specific predictions, particularly noting stronger ground motions during shorter seismic periods. 
+        The project deals with the analysis of groud motion data as well as the vibrational analysis of the urban structures. A recent study {% cite taddei2024development %} in this direction examines small earthquakes caused by geothermal power plants in Southern Germany and develops new equations to predict ground motion during these events. The research uses data from a power plant in Insheim, Germany and combines it with simulated data for the Munich area. The findings highlight the need for region-specific ground motion prediction equations. 
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0 text-center">

@@ -4,8 +4,9 @@
 repo_description_lines_max: 2
 
 github_repos:
-  - Aditi-Kumawat/Ansys_Taxonomy_Files
-  - Aditi-Kumawat/Source_Wavefield_Simulation
+  - Aditi-Kumawat/TaxoSim
+  - Aditi-Kumawat/WaveSim
   - Aditi-Kumawat/FreqTrack
   - Aditi-Kumawat/Masterarbeit_WTK
   - Aditi-Kumawat/Mechanics_Apps
+  - Aditi-Kumawat/Aditi-Kumawat.github.io

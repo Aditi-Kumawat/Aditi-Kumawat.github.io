@@ -9,7 +9,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>N1150,</p>
+    <p>N1155,</p>
     <p>Arcisstrasse, 21</p>
     <p>Munich, Germany 80333</p>
 news: false # includes a list of news items
