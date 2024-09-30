@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Track-Defect Analysis
-description: impact of rail/track irregularities on rail system safety
+description: Impact of rail/track irregularities on rail system safety
 img: assets/img/P2rsqtthumb.jpg
 importance: 2
 category: work
@@ -9,7 +9,7 @@ related_publications: true
 ---
 
 <p>
-    This project is centered around the development of an innovative iterative technique designed to evaluate time-dependent loads on track structures, specifically addressing the challenges posed by various track defects. The interaction between a moving train and rail defects, such as mud spots or rail-head corrugation, can lead to unstable vibrations and rapid track degradation (see examples in <strong>Figure 1</strong> and <strong>Figure 2</strong>). These defects cause sudden variations in track stiffness and geometry, resulting in additional dynamic stresses that can compromise the structural health of the track.
+    This project is centered around the development of an innovative iterative technique designed to evaluate time-dependent loads on track structures, specifically addressing the challenges posed by various track defects. The interaction between a moving train and rail defects, such as rail-head corrugation or mud spots, can lead to unstable vibrations and rapid track degradation (see examples in <strong>Figure 1</strong> and <strong>Figure 2</strong>). These defects cause sudden variations in track stiffness and geometry, resulting in additional dynamic stresses that can compromise the structural health of the track.
 </p>
 <p>
     While existing methods can address some aspects of vehicle-track interaction, they often fall short in fully capturing the complex, coupled dynamics involved when multiple track defects are present. This project aims to bridge that gap by developing a more comprehensive and general technique to assess the potential damage to track structures, in order to ensure a more reliable rail transport.
@@ -32,6 +32,18 @@ related_publications: true
     Figure 1. The rail and wheel head defects such as rail head <a href="https://www.jstage.jst.go.jp/article/jmtl/3/1/3_1_154/_article" target="_blank">corrugation</a> (left), <a href="https://mp.nl/en/solution/sound-measurements-board-train-detecting-rail-defects" target="_blank">rail squat</a> (top-right), and the wheel flat <a href="https://en.wikipedia.org/wiki/Flat_spot" target="_blank">wheel flat</a> (bottom-right) may cause unwanted stress on the track under dynamic loading and may also result in wheel-rail contact loss.
 </div>
 
+ <div class="row d-flex align-items-end">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/P2prtrackgeom.jpg" title="Poor track geometry" class="img-fluid w-50" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/P2mud.jpg" title="Mud-pumping" class="img-fluid w-50" %}
+    </div>
+</div>
+<div class="caption">
+    Figure 2. Track irregularities caused by <a href="https://railgallery.wongm.com/ atsb.gov.au" target="_blank">poor track geometry</a> (left) and <a href="https://railgallery.wongm.com/" target="_blank">mud-pumping</a> (right).
+</div>
+   
 <p>
     A new iterative approach is developed to analyze the coupled equation of motion of the vehicle-track system. This approach takes into account:
 </p>

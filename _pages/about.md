@@ -20,6 +20,6 @@ I am a postdoctoral researcher at the Chair of Structural Mechanics, Technical U
 
 Before joining the Technical University of Munich, I worked as a guest scientist at the Institute of Railways and Transportation at the University of Stuttgart from June to December 2019. I also served as a visiting researcher at the Chair of Structural Mechanics at the Technical University of Munich from February 2020 to August 2021.
 
-My research expertise encompasses computational modeling of railway track systems, wave propagation in elastic media, soil-structure interactions, and structural vibrations in residential buildings. Through my background in research and teaching, I have developed a strong foundation in mechanics, signal processing, structural dynamics, and wave propagation.
+My research expertise encompasses computational modeling of railway track systems, wave propagation in elastic media, soil-structure interactions, and structural vibrations in residential buildings. Through my background in research and teaching, I have a fundamental understanding of mechanics, signal processing, structural dynamics, and wave propagation.
 
-I am actively seeking professional roles in numerical modeling and vibration analysis of structural systems, where I can apply and further develop my skills.
+I am actively seeking professional roles in computational modeling and vibration analysis of structural systems, where I can apply and further develop my skills.

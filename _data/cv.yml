@@ -41,7 +41,7 @@
       description:
         - Wave propagation characterization of track behaviour
         - Evaluation of <a href="https://aditi-kumawat.github.io/projects/3_project/">Green's function</a> for the railway track
-        - Modelling of <a href="https://aditi-kumawat.github.io/projects/1_project/">ballasted rail-track systems</a>
+        - Modeling of <a href="https://aditi-kumawat.github.io/projects/1_project/">ballasted rail-track systems</a>
 
 - title: Education
   type: time_table
@@ -63,14 +63,14 @@
 - title: Open Source Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/Aditi-Kumawat/Ansys_Taxonomy_Files">Ansys_Taxonomy_Files</a>
-      year: 2022-now
-      description: Modelling and analysis of building models in Ansys.
-    - title: <a href="https://github.com/Aditi-Kumawat/Source_Wavefield_Simulation">Source_Wavefield_Simulation</a>
-      year: 2023-now
+    - title: <a href="https://github.com/Aditi-Kumawat/TaxoSim">TaxoSim</a>
+      year: 2023-present
+      description: Modeling and analysis of building models in Ansys.
+    - title: <a href="https://github.com/Aditi-Kumawat/WaveSim">WaveSim</a>
+      year: 2023-present
       description: Generation of synthetic ground motions for 1-D soil-profile.
     - title: <a href="https://github.com/Aditi-Kumawat/FreqTrack">FreqTrack</a>
-      year: 2019
+      year: 2024-present
       description: Frequency-dependent analytical model of ballasted rail-track systems subjected to moving loads.
 
 #- title: Honors and Awards
@@ -89,7 +89,7 @@
   contents:
     - title: English
       items:
-        - Advanced (Level C1)
+        - Advanced (Level C2)
     - title: Hindi
       items:
         - Advanced (Native)

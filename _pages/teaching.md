@@ -38,7 +38,7 @@ Co-supervised students for the development of [interactive apps](https://www.cee
 
 #### Technical University of Munich Germany
 Co-conducted the lecture/tutorial sessions for one graduate course per semester for seven semesters
-- **[Structure Dynamics](https://www.cee.ed.tum.de/en/bm/teaching/master-lectures/structural-dynamics/)**
+- **[Structural Dynamics](https://www.cee.ed.tum.de/en/bm/teaching/master-lectures/structural-dynamics/)**
   - 90-min-long weekly tutorial sessions and 90-min-long bi-weekly seminar sessions
 - **[Integral Transform Methods](https://www.cee.ed.tum.de/en/bm/teaching/master-lectures/integral-transform-methods/)**
   - 90-min-long bi-weekly tutorial sessions

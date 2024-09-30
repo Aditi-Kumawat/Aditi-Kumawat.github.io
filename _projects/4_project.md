@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Wave-propagation Analysis
-description: synthetic ground motion generation for induced events
+description: Synthetic ground motion generation for induced events
 img: assets/img/P4.jpg
 importance: 4
 category: work
@@ -78,7 +78,7 @@ related_publications: true
 </div>
 
 <p>
-    By simplifying the process of generating ground motion data, this project contributes to safer geothermal energy extraction and better preparedness for any seismic risks. For more detailed information and additional results, please refer to the studies: {% cite Kumawat2024 %}. All codes associated with this study are available in the GitHub repository <a href="https://github.com/Aditi-Kumawat/Source_Wavefield_Simulation" target="_blank">Source_Wavefield_Simulation</a>.  
+    By simplifying the process of generating ground motion data, this project contributes to safer geothermal energy extraction and better preparedness for any seismic risks. For more detailed information and additional results, please refer to the studies: {% cite Kumawat2024 %}. All codes associated with this study are available in the GitHub repository <a href="https://github.com/Aditi-Kumawat/WaveSim" target="_blank">WaveSim</a>.  
 </p>
 
 
