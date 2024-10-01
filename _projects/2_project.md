@@ -32,18 +32,19 @@ related_publications: true
     Figure 1. The rail and wheel head defects such as rail head <a href="https://www.jstage.jst.go.jp/article/jmtl/3/1/3_1_154/_article" target="_blank">corrugation</a> (left), <a href="https://mp.nl/en/solution/sound-measurements-board-train-detecting-rail-defects" target="_blank">rail squat</a> (top-right), and the wheel flat <a href="https://en.wikipedia.org/wiki/Flat_spot" target="_blank">wheel flat</a> (bottom-right) may cause unwanted stress on the track under dynamic loading and may also result in wheel-rail contact loss.
 </div>
 
- <div class="row d-flex align-items-end">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/P2prtrackgeom.jpg" title="Poor track geometry" class="img-fluid w-50" %}
+<div class="row d-flex align-items-end">
+    <div class="col-md-6 mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/P2prtrackgeom.jpg" title="Poor track geometry" class="img-fluid w-100" %}
     </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/P2mud.jpg" title="Mud-pumping" class="img-fluid w-50" %}
+    <div class="col-md-6 mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/P2mud.jpg" title="Mud-pumping" class="img-fluid w-100" %}
     </div>
 </div>
 <div class="caption">
-    Figure 2. Track irregularities caused by <a href="https://railgallery.wongm.com/ atsb.gov.au" target="_blank">poor track geometry</a> (left) and <a href="https://railgallery.wongm.com/" target="_blank">mud-pumping</a> (right).
+    Figure 2. Track irregularities caused by <a href="https://railgallery.wongm.com/atsb.gov.au" target="_blank">poor track geometry</a> (left) and <a href="https://railgallery.wongm.com/" target="_blank">mud-pumping</a> (right).
 </div>
-   
+
+  
 <p>
     A new iterative approach is developed to analyze the coupled equation of motion of the vehicle-track system. This approach takes into account:
 </p>

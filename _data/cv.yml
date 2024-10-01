@@ -19,8 +19,8 @@
       description:
         - title: Project- <a href="https://geothermie-allianz.de/">Geothermie Allianz Bayern</a>.
           contents:
-            - <a href="https://aditi-kumawat.github.io/projects/5_project/">Vibrational analysis</a> of the urban structures
-            - <a href="https://aditi-kumawat.github.io/projects/4_project/">Synthetic ground motion generation</a> for geothermally induced seismicity.
+            - <a href="https://aditi-kumawat.github.io/projects/5_project/">Vibrational analysis of the urban structures</a>
+            - <a href="https://aditi-kumawat.github.io/projects/4_project/">Synthetic ground motion generation for geothermally induced seismicity</a> 
             - Surrogate model utilizing polynomial chaos expansion to link geothermal ground motion with building response
     
     - title: Visiting Researcher
@@ -33,15 +33,15 @@
       institution: University of Stuttgart, Germany.
       year: 2019
       description:
-        - Simulation and modeling of <a href="https://aditi-kumawat.github.io/projects/2_project/">railway track defects</a>
+        - <a href="https://aditi-kumawat.github.io/projects/2_project/">Simulation and modeling of railway track defects</a>
 
     - title: PhD Candidate
       institution: Indian Institute of Technology Kanpur, India
       year: 2015 - 2021
       description:
         - Wave propagation characterization of track behaviour
-        - Evaluation of <a href="https://aditi-kumawat.github.io/projects/3_project/">Green's function</a> for the railway track
-        - Modeling of <a href="https://aditi-kumawat.github.io/projects/1_project/">ballasted rail-track systems</a>
+        - <a href="https://aditi-kumawat.github.io/projects/3_project/">Evaluation of Green's function for the railway track</a> 
+        - <a href="https://aditi-kumawat.github.io/projects/1_project/">Modeling of ballasted rail-track systems</a>
 
 - title: Education
   type: time_table
