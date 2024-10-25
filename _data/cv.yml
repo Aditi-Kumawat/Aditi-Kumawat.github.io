@@ -19,9 +19,9 @@
       description:
         - title: Project- <a href="https://geothermie-allianz.de/">Geothermie Allianz Bayern</a>.
           contents:
-            - <a href="https://aditi-kumawat.github.io/projects/5_project/">Vibrational analysis of the urban structures</a>
-            - <a href="https://aditi-kumawat.github.io/projects/4_project/">Synthetic ground motion generation for geothermally induced seismicity</a> 
-            - Surrogate model utilizing polynomial chaos expansion to link geothermal ground motion with building response
+            - <a href="https://aditi-kumawat.github.io/projects/5_project/">Vibrational analysis of the building taxonomy</a>
+            - <a href="https://aditi-kumawat.github.io/projects/4_project/">Synthetic ground motion generation for induced seismicity</a> 
+            - Human comfort and building serviceability analysis using DIN technical guidelines
     
     - title: Visiting Researcher
       institution: Technical University of Munich, Germany
@@ -40,7 +40,7 @@
       year: 2015 - 2021
       description:
         - Wave propagation characterization of track behaviour
-        - <a href="https://aditi-kumawat.github.io/projects/3_project/">Evaluation of Green's function for the railway track</a> 
+        - <a href="https://aditi-kumawat.github.io/projects/3_project/">Evaluation of impulse response function for the railway track</a> 
         - <a href="https://aditi-kumawat.github.io/projects/1_project/">Modeling of ballasted rail-track systems</a>
 
 - title: Education
